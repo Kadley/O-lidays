@@ -1,0 +1,69 @@
+@startuml
+left to right direction
+package Utilisateur-non-connecté {
+  actor Visiteur as V
+}
+package Utilisateur-connecté {
+  actor Membre as M #Orchid;line:Fuchsia;line.bold;text:Fuchsia
+  package Role {
+      actor Propriétaire as P #lightgreen;line:green;line.bold;text:green
+      actor Loacataire as L #MediumPurple;line:purple;line.bold;text:purple
+      actor Administrateur as A #pink;line:red;line.bold;text:red
+  }
+}
+
+package Site-Web-O'lidays #aliceblue;line:blue;line.bold;text:blue {
+    usecase "Acceder à la page d'accueil" as UC1
+    package Gestion-utilisateurs  {
+        usecase "Se créer un compte" as UC2
+        usecase "Se connecter" as UC3
+        usecase "Se déconnecter" as UC4
+        usecase "modifier mon mot de passe" as UC5
+        usecase "Supprimer un membre" as UC19
+    }
+    package Annonces {
+        usecase "Sélectionner une annonce" as UC6
+        usecase "Réaliser une annonce" as UC8
+        usecase "Gérer une annonce" as UC9
+    }
+    package Propriétés {
+        usecase "Déclarer une propriété à louer" as UC7
+        usecase "Réserver une propriété" as UC10
+        usecase "Gérer une propriété" as UC11
+        usecase "Valider une propriété" as UC14
+    }
+    package Réservation {
+        usecase "Valider une réservation" as UC12
+        usecase "Annuler une réservation" as UC13
+        usecase "Consulter l'historique de réservation" as UC15
+    }
+    package Avis {
+        usecase "Donner une note à la propriété loué" as UC16
+        usecase "Ecrire un commentaire à la propriété loué" as UC17
+        usecase "Valider un Avis" as UC18
+    }
+}
+
+V --> UC1
+V --> UC2
+V --> UC3
+M --> UC4 #Fuchsia;line.bold
+M --> UC5 #Fuchsia;line.bold
+M --> UC6 #Fuchsia;line.bold
+M --> UC7 #Fuchsia;line.bold
+P --> UC8 #green;line.bold
+P --> UC9 #green;line.bold
+M --> UC10 #Fuchsia;line.bold
+P --> UC11 #green;line.bold
+P --> UC12 #green;line.bold
+P --> UC13 #green;line.bold
+L --> UC13 #purple;line.bold
+A --> UC14 #red;line.dashed
+L --> UC15 #purple;line.bold
+P --> UC15 #green;line.bold
+L --> UC16 #purple;line.bold
+L --> UC17 #purple;line.bold
+A --> UC18 #red;line.dashed
+A --> UC19 #red;line.dashed
+
+@enduml

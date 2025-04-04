@@ -1,0 +1,51 @@
+{
+  "width": 732,
+  "height": 542,
+  "cx": [
+    ["RESERVE", 57],
+    ["RESERVATION", 193],
+    ["POSSEDE", 339],
+    ["DISPOSE", 478],
+    ["DISPONIBILITE_PROPRIETE", 634],
+    ["UTILISATEUR", 57],
+    ["PROPRIETAIRE", 193],
+    ["PROPRIETE", 339],
+    ["APPARTIENT", 478],
+    ["IMAGE_PROPRIETE", 634],
+    ["COMMENTE", 57],
+    ["COMMENTAIRE", 193],
+    ["EVALUE", 339]
+  ],
+  "cy": [
+    ["RESERVE", 85],
+    ["RESERVATION", 85],
+    ["POSSEDE", 85],
+    ["DISPOSE", 85],
+    ["DISPONIBILITE_PROPRIETE", 85],
+    ["UTILISATEUR", 288],
+    ["PROPRIETAIRE", 288],
+    ["PROPRIETE", 288],
+    ["APPARTIENT", 288],
+    ["IMAGE_PROPRIETE", 288],
+    ["COMMENTE", 474],
+    ["COMMENTAIRE", 474],
+    ["EVALUE", 474]
+  ],
+  "shift": [
+    ["RESERVE,RESERVATION,0", 0],
+    ["RESERVE,UTILISATEUR,0", 0],
+    ["POSSEDE,RESERVATION,0", 0],
+    ["POSSEDE,PROPRIETE,0", 0],
+    ["DISPOSE,DISPONIBILITE_PROPRIETE,0", 0],
+    ["DISPOSE,PROPRIETE,0", 0],
+    ["PROPRIETAIRE,PROPRIETE,0", 0],
+    ["PROPRIETAIRE,UTILISATEUR,0", 0],
+    ["APPARTIENT,PROPRIETE,0", 0],
+    ["APPARTIENT,IMAGE_PROPRIETE,0", 0],
+    ["COMMENTE,UTILISATEUR,0", 0],
+    ["COMMENTE,COMMENTAIRE,0", 0],
+    ["EVALUE,PROPRIETE,0", 0],
+    ["EVALUE,COMMENTAIRE,0", 0]
+  ],
+  "ratio": []
+}

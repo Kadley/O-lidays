@@ -1,0 +1,18 @@
+RÉSERVE, 01 RÉSERVATION, 0N UTILISATEUR
+RÉSERVATION: ref. réservation, date arrivée, date départ, montant, nombre de personne, statut, raison statut
+POSSÈDE, 01 RÉSERVATION, 0N PROPRIÉTÉ
+DISPOSE, 11 DISPONIBILITÉ PROPRIÉTÉ, 0N PROPRIÉTÉ
+DISPONIBILITÉ PROPRIÉTÉ: ref. disponibilité propriété, date début, date fin
+
+
+UTILISATEUR: ref. utilisateur, nom, email, mot de passe, role
+PROPRIÉTAIRE, 11 PROPRIÉTÉ, 0N UTILISATEUR
+PROPRIÉTÉ: ref. propriété, titre, localisation, description, prix par nuit, statut, surface, capacité, type, animaux autorisés
+APPARTIENT, 0N PROPRIÉTÉ, 11 IMAGE PROPRIÉTÉ
+IMAGE PROPRIÉTÉ: ref. image propriété, url, mimetype, alt, size
+
+COMMENTE, 0N UTILISATEUR, 01 COMMENTAIRE
+COMMENTAIRE: ref. commentaire, commentaire, note, avis vérifié, statut
+ÉVALUE, 0N PROPRIÉTÉ, 11 COMMENTAIRE
+:
+:

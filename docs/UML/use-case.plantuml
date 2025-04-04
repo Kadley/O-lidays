@@ -1,0 +1,19 @@
+@startuml use-case
+actor Visiteur
+actor Utilisateur
+actor Propriétaire
+actor Administrateur
+
+rectangle Système {
+  Visiteur -- (Rechercher un bien)
+  Visiteur -- (Créer un compte)
+  Visiteur -- (Se connecter)
+  Utilisateur -- (Rechercher un bien)
+  Utilisateur -- (Réserver un bien)
+  Propriétaire -- (Créer une annonce)
+  Propriétaire -- (Consulter les réservations)
+  Propriétaire -- (Valider une réservation)
+  Administrateur -- (Valider les bien)
+  Administrateur -- (Valider les commentaires)
+}
+@enduml
